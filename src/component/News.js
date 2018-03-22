@@ -53,7 +53,7 @@ class News extends Component {
     } else {
       return (
           <Container>
-            <GlitchText text="NEWS"/>
+            <GlitchText text="NEWS" color="white"/>
             {items.map((item, index)  => (   
               <NewsArticle key={index} item={item} />
             ))}

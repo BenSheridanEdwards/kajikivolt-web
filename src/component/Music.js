@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
 import Container from 'muicss/lib/react/container';
 import AudioPlayer from './AudioPlayer';
-import Heading from './Heading';
+import GlitchText from './GlitchText';
 
 class Music extends Component {
-
-  componentDidMount() {
-
-  }
 
   render() {
       return (
           <Container>
-          <Heading
-          rank={2}
-          text="MUSIC"
-          type="headline"
-          />
-          <AudioPlayer />
+            <GlitchText text="MUSIC" color="black" />
+            <AudioPlayer />
           </Container>
       );
   }

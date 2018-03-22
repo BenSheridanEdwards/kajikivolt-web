@@ -4,7 +4,7 @@
   position:relative;
   z-index:10;
   overflow: hidden;
-  background: url('/img/hero/lettering_landscape_large.jpg') #c0c0c0 no-repeat center center;
+  background-color: #c0c0c0 no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +17,7 @@
   }
 }
 
-h1.knockout-text-one, h1.knockout-text-two {
+h1.knockout-text-one {
  color: white;
  margin: 0;
  padding: 0;
@@ -25,10 +25,11 @@ h1.knockout-text-one, h1.knockout-text-two {
  -webkit-text-fill-color: transparent;
  -webkit-background-clip: text;
  font-size: 28vw;
+ line-height: 1em;
  text-align: center;
  font-family: 'Oswald', sans-serif;
 }
  
 .knockout-text-one {
-  background-image: url('/img/hero/lettering_landscape_small.jpg');
+  background-image: url('/img/background/animate.gif');
 }
