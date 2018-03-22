@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Container from 'muicss/lib/react/container';
 import Loading from './Loading';
 import Button from 'muicss/lib/react/button';
-import Heading from './Heading';
+import GlitchText from './GlitchText';
 import NewsArticle from './NewsArticle';
 
 class News extends Component {
@@ -53,11 +53,7 @@ class News extends Component {
     } else {
       return (
           <Container>
-            <Heading
-            rank={2}
-            text="NEWS"
-            type="headline"
-            />
+            <GlitchText text="NEWS"/>
             {items.map((item, index)  => (   
               <NewsArticle key={index} item={item} />
             ))}
