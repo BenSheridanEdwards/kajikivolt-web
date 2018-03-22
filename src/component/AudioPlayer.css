@@ -36,24 +36,31 @@
   right: -30px;
   width: 230px;
   height: 230px;
-  background: url(http://laptevpavel.ru/playground/player/drassed-for-space.jpg);
+  background-image: url(/img/furniture/loading.gif);
   background-size: cover;
   transition: all 0.2s;
 }
-@media screen and (max-width: 560px) {
-  .AudioPlayer__cover {
-    position: relative;
-    width: 100%;
-    height: 80vw;
-    bottom: inherit;
-    right: inherit;
-  }
+
+.AudioPlayer__cover img {
+  width: 100%;
+  height: 100%;
 }
+
 @media screen and (max-width: 520px) {
   .AudioPlayer__cover {
     position: relative;
     width: 100%;
     height: 90vw;
+    bottom: inherit;
+    right: inherit;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .AudioPlayer__cover {
+    position: relative;
+    width: 100%;
+    height: 80vw;
     bottom: inherit;
     right: inherit;
   }

@@ -113,8 +113,10 @@ class AudioPlayer extends Component {
         <source id="audioSource" src={ this.state.src } type="audio/mpeg" ref="audioElementSource"/>
         Your browser does not support the audio element.
       </audio>
-      <div className="AudioPlayer__cover" style={{backgroundImage: 'url(' + this.state.trackImage + ')'}}>
-        <a href="#" target="_blank"></a>
+      <div className="AudioPlayer__cover">
+        <a href="#" target="_blank">
+          <img src={this.state.trackImage} />
+        </a>
       </div>
       <div className="AudioPlayer__info">
         <h2>{ this.state.artistName}</h2>
