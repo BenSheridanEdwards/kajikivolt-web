@@ -1,0 +1,26 @@
+https://www.justinmccandless.com/post/html5-audio-with-react/
+//http://neptunian.github.io/react-photo-gallery/examples/dynamic-columns.html
+
+// https://xopixel.com/responsive-knockout-text-with-css3/
+@propTypes =
+    element: React.PropTypes.shape({
+         version: React.PropTypes.number
+         params:
+             React.PropTypes.shape(
+                 url: React.PropTypes.string.isRequired
+                 filename: React.PropTypes.string.isRequired
+                 title: React.PropTypes.string.isRequired
+                 ext: React.PropTypes.string.isRequired
+             ).isRequired
+     }).isRequired
+
+componentWillReceiveProps: (nextProps) ->
+    element = ReactDOM.findDOMNode(this)
+    audio = element.querySelector('audio')
+    source = audio.querySelector('source')
+
+    # When the url changes, we refresh the component manually so it reloads the loaded file
+    if nextProps.element.params?.filename? and
+    nextProps.element.params.url isnt @props.element.params.url
+        source.src = nextProps.element.params.url
+        audio.load()

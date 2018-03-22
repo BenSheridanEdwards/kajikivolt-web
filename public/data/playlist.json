@@ -1,0 +1,36 @@
+{
+  "items": [
+    { "id": "001",
+      "artistName": "Kajiki Volt",
+      "trackTitle": "Don't Fuck With Love",
+      "description": "Lyrics",
+      "trackImage": "/img/covers/dfwl.jpg",
+      "trackSrc": "/music/AlexandraPalaceSession/DontFuckWithLove.mp3",
+      "link": ""
+    },
+    { "id": "002",
+      "artistName": "Kajiki Volt",
+      "trackTitle": "Dragstrip Riot",
+      "description": "Kajiki Volt will be playing The Water Rats, London on Saturday, 10 March 2018.",
+      "trackImage": "/img/covers/dr.png",
+      "trackSrc": "/music/AlexandraPalaceSession/DragStripRiot.mp3",
+      "link": ""
+    },
+    { "id": "003",
+      "artistName": "Kajiki Volt",
+      "trackTitle": "Gentlemen Prefer Bombs",
+      "description": "Kajiki Volt will be playing The Water Rats, London on Saturday, 10 March 2018.",
+      "trackImage": "/img/covers/gentlemenpreferbombs.jpg",
+      "trackSrc": "/music/AlexandraPalaceSession/GentlemenPreferBombs.mp3",
+      "link": ""
+    },
+    { "id": "004",
+    "artistName": "Kajiki Volt",
+    "trackTitle": "Invisible Men",
+    "description": "Kajiki Volt will be playing The Water Rats, London on Saturday, 10 March 2018.",
+    "trackImage": "/img/covers/invisible.png",
+    "trackSrc": "/music/AlexandraPalaceSession/InvisibleMen.mp3",
+    "link": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.Heading {
+ text-align: center;
+}
+
+svg {
+  width: 5em; height: 1.5em;
+  font: 900 500%/1.2 'Arial Black', sans-serif;
+}
+
+svg #pattern {
+  transform-origin: 50% 50%;
+}
+
+text { 
+  fill: url(#pattern);
+  display: inline-block;
+  font-size: 120px;
+}

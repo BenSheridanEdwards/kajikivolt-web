@@ -1,0 +1,22 @@
+.NewsArticle {
+    float: none;
+    width: 65%;
+    position: relative;
+    background: rgba(255,255,255,0.1);
+    margin: 30px auto 30px auto;
+    border-top: 0px solid rgba(255,255,255,1);
+    padding: 50px;
+  }
+.NewsArticle__Title {
+  color: #d3d3d3;
+  font-size: 30px;
+  font-weight: 700
+}
+.NewsArticle__Text {
+    color: #d3d3d3;
+    font-size: 19px;
+    font-weight: 400
+}
+.NewsArticle__Image {
+  width: 85%;
+}

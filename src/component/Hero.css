@@ -1,0 +1,34 @@
+.Hero {
+  width:100%;
+  height:100%;
+  position:relative;
+  z-index:10;
+  overflow: hidden;
+  background: url('/img/hero/lettering_landscape_large.jpg') #c0c0c0 no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .Hero {
+      background-image: url('/img/hero/lettering_landscape_small.jpg');
+  }
+}
+
+h1.knockout-text-one, h1.knockout-text-two {
+ color: white;
+ margin: 0;
+ padding: 0;
+ background-size: cover;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ font-size: 28vw;
+ text-align: center;
+ font-family: 'Oswald', sans-serif;
+}
+ 
+.knockout-text-one {
+  background-image: url('/img/hero/lettering_landscape_small.jpg');
+}

@@ -1,0 +1,28 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+
+// https://codepen.io/noahblon/pen/wKvvxX
+// https://codepen.io/chasebank/pen/qZNLyx
+//https://codepen.io/lbebber/pen/ypgql
+
+//https://codepen.io/juanbrujo/pen/yGpAK
+
+// https://codepen.io/Jintos/pen/crlxk
+//https://codepen.io/yoksel/pen/XJbzrO
+//https://codepen.io/TimPietrusky/pen/Bsegb
+//https://maxwellito.github.io/vivus/
+// https://tympanus.net/Development/FancyLetterAnimation/
+// http://tobiasahlin.com/moving-letters/

@@ -1,0 +1,33 @@
+{
+  "name": "kajikivolt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "material-ui": "^0.20.0",
+    "muicss": "^0.9.36",
+    "node-sass-chokidar": "^1.2.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-image": "^1.3.1",
+    "react-image-gallery": "^0.8.7",
+    "react-mailchimp-subscribe": "^2.0.1",
+    "react-media-player": "^0.7.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-visibility-sensor": "^3.11.0",
+    "redux": "^3.7.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

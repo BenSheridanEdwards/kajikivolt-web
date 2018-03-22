@@ -1,0 +1,32 @@
+.Block {
+  width:100%;
+  position:relative;
+  z-index:10;
+  overflow: hidden;
+  text-align: center;
+}
+
+.Block__Background__01 {
+  width:100%;
+  height: 400px;
+  position:relative;
+  z-index:10;
+  overflow: hidden;
+  background: url('/img/background/pattern_01.jpg') #c0c0c0 no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Block__Background__A {
+  background: url('/img/background/pattern_02.jpg') #c0c0c0 repeat center center;
+}
+
+.Block__Background__B {
+  background: url('/img/background/pattern_02.jpg') #c0c0c0 repeat center center;
+}
+
+.Block__Background__C {
+  background: url('/img/background/large-raindrops-background.jpg') #c0c0c0 repeat center center;
+}
