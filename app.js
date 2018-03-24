@@ -19,9 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Serve static assets
-app.use(express.static(path.resolve(__dirname, '..', 'client/build')));
-// app.use(express.static(path.join(__dirname, 'client/build')));
-
+app.use(express.static(path.join(__dirname, 'client/public')));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
