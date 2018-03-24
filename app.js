@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var sanitize = require('sanitize').middleware;
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -13,16 +14,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(sanitize);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
-// app.use(express.static(path.join(__dirname, 'client/build')));
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-// });
 
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, 'client/build')));
@@ -33,8 +29,6 @@ app.use('/api', apiRouter );
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -20,14 +20,14 @@ class App extends Component {
       <div className="App">
         <Header />
         <Hero />
-        <Subscribe/>
         <Block className="Block__Background__A">
           <News />
         </Block>
         <Music />
         <Block className="Block__Background__C">
           <Gallery />
-        </Block> 
+        </Block>
+        <Subscribe/>
         <Footer />
       </div>
     );
