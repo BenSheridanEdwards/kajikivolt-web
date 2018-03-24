@@ -15,5 +15,9 @@
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "sanitize": "^2.1.0"
+  },
+  "engines": {
+    "node": "9.6.1"
   }
 }
+
