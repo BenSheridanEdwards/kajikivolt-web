@@ -18,6 +18,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// Serve static assets
+app.use(express.static(path.resolve(__dirname, '..', 'client/build')));
+// app.use(express.static(path.join(__dirname, 'client/build')));
+
+
+// Always return the main index.html, so react-router render the route in the client
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'client/build', 'index.html'));
+});
+
 app.use('/api', apiRouter );
 
 // catch 404 and forward to error handler
@@ -36,6 +46,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 module.exports = app;
