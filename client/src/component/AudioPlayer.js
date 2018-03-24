@@ -129,24 +129,24 @@ class AudioPlayer extends Component {
       <div className="AudioPlayer__controls">
         <div className="controls_plays">
           <svg id="prev_btn" viewBox="0 0 24.5 23.6" pointerEvents="visible" onClick={ this.prevAudio.bind(this) }>
-            <polygon points="0,11.8 13.5,0 13.5,10.7 24.5,0 24.5,23.6 13.5,12.9 13.5,23.6 " pointerEvents="bounding-box" tabindex="0"></polygon>
+            <polygon points="0,11.8 13.5,0 13.5,10.7 24.5,0 24.5,23.6 13.5,12.9 13.5,23.6 " pointerEvents="bounding-box" tabIndex="0"></polygon>
           </svg>
 
           <svg id="plays_btn" viewBox="0 0 24.5 30.9" onClick={ this.playpauseAudio.bind(this) } pointerEvents="bounding-box">
           {
           this.state.isPlaying
-            ? <g id="pause_btn" pointerEvents="bounding-box" tabindex="0">
+            ? <g id="pause_btn" pointerEvents="bounding-box" tabIndex="0">
               <rect x="0" y="0" width="8.2" height="30.9"></rect>
               <rect x="16.2" y="0" width="8.2" height="30.9"></rect>
             </g>
-            : <g id="play_btn" pointerEvents="bounding-box" tabindex="0">
+            : <g id="play_btn" pointerEvents="bounding-box" tabIndex="0">
               <path d="M0,30.9L0,0l24.5,15.4L0,30.9z"></path>
             </g>
           }
           </svg>
 
           <svg id="next_btn" viewBox="0 0 24.5 23.6" pointerEvents="visible" onClick={ this.nextAudio.bind(this) }>
-            <polygon points="25,11.8 11.5,0 11.5,10.7 0.5,0 0.5,23.6 11.5,12.9 11.5,23.6 " tabindex="0"></polygon>
+            <polygon points="25,11.8 11.5,0 11.5,10.7 0.5,0 0.5,23.6 11.5,12.9 11.5,23.6 " tabIndex="0"></polygon>
           </svg>
         </div>
       </div>

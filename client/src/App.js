@@ -12,6 +12,7 @@ import Footer from './component/Footer';
 import Music from './component/Music';
 import Media from './component/Media';
 import Gallery from './component/Gallery';
+import Subscribe from './component/Subscribe';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Hero />
+        <Subscribe/>
         <Block className="Block__Background__A">
           <News />
         </Block>
