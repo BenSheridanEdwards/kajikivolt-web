@@ -8,6 +8,7 @@ build/
 config/
 .module-cache
 *.log*
+*.env*
 chrome-user-data
 *.sublime-project
 *.sublime-workspace

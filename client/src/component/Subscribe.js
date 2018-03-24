@@ -22,14 +22,19 @@ class Subscribe extends Component {
                 To complete the subscription process, please click the link in the email we just sent you.`
     }
     this.state = this.defaultState;
-    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  updateInputValue(event){
+    debugger;
+    this.setState({
+      emailValue: event.target.value
+    })
   }
 
   handleSubmit = (event) => {
     event.preventDefault()
-    let formdata = new FormData(event.target);
     let data = {
-      email : formdata.get('email')
+      email : this.state.emailValue
     }
     this.callApi(data)
       .then(response => {
@@ -88,13 +93,13 @@ class Subscribe extends Component {
             <div>
                 <h4>Oops</h4>
                 <p>{this.state.message}</p>
-                <Button variant="raised" onClick={this.resetState}>Try again</Button>
+                <Button variant="raised" onClick={this.resetState.bind(this)}>Try again</Button>
             </div>
             )}
             {!this.state.isComplete && (
-              <Form onSubmit={this.handleSubmit}>
+              <Form onSubmit={this.handleSubmit.bind(this)}>
               <legend>Subscribe to the mailing list</legend>
-              <Input ref={(ref) => {this.email = ref}} label="Your email address" type="email" name="email" floatingLabel={true} required={true} />
+              <Input onChange={this.updateInputValue.bind(this)} ref={(ref) => {this.email = ref}} label="Your email address" type="email" name="email" floatingLabel={true} required={true} />
               <Button variant="raised">Subscribe</Button>
               <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
                   <label htmlFor="b_name">Name: </label>
