@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'client/public')));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
 
 app.use('/api', apiRouter );
